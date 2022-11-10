@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Calculator</title>
+	<link rel="stylesheet" href="style.css">
+	
+</head>
+<body>
+	<div class="container">
+		<div class="calcbody">
+			<div class="heading">
+				<h2>Calculator</h2>
+			</div>
+			<div class="restab">
+				<input class="inp" type="text" id="input">
+			</div>
+			<div class="buttons">
+				<div id="fst" onclick="c()" class="boxes">
+					<h2>C</h2>
+				</div>
+				
+				<div class="boxes" onclick="ce()">
+					<h2 style="padding: 10px 0px 0px 5px;">CE</h2>
+				</div>
+				<div class="boxes" onclick="screen('%')">
+					<h2>%</h2>
+				</div>	
+				<div class="boxes" onclick="screen('/')">
+					<h2 style="padding: 10px 0px 0px 15px;">/</h2>
+				</div>
+
+			</div>
+			<div class="buttons">
+				<div class="boxes"onclick="screen('7')">
+					<h2>7</h2>
+				</div>
+				
+				<div class="boxes" onclick="screen('8')">
+					<h2>8</h2>
+				</div>
+				<div class="boxes" onclick="screen('9')">
+					<h2>9</h2>
+				</div>
+				<div class="boxes" onclick="screen('*')">
+					<h2>X</h2>
+				</div>
+
+			</div>
+			<div class="buttons">
+				<div class="boxes" onclick="screen('4')">
+					<h2>4</h2>
+				</div>
+				
+				<div class="boxes" onclick="screen('5')">
+					<h2>5</h2>
+				</div>
+				<div class="boxes" onclick="screen('6')">
+					<h2>6</h2>
+				</div>
+				<div class="boxes" onclick="screen('-')">
+					<h2 style="padding: 5px 0px 0px 15px; height: 90%;">_</h2>
+				</div>
+
+			</div>
+			<div class="buttons">
+				<div class="boxes" onclick="screen('1')">
+					<h2 id="myBtn">1</h2>
+				</div>
+				
+				<div class="boxes" onclick="screen('2')">
+					<h2>2</h2>
+				</div>
+				<div class="boxes" onclick="screen('3')">
+					<h2>3</h2>
+				</div>
+				<div class="boxes" onclick="screen('+')">
+					<h2>+</h2>
+				</div>
+
+			</div>
+			<div class="buttons">
+				<div class="boxes" onclick="screen('+_')">
+					<h2>+_</h2>
+				</div>
+				
+				<div class="boxes" onclick="screen('0')">
+					<h2>0</h2>
+				</div>
+				<div class="boxes" onclick="screen('.')">
+					<h2 style="padding: 10px 0px 0px 15px;">.</h2>
+				</div>
+				<div class="boxes" onclick="evalthis()">
+					<h2 style= "padding: 10px 0px 0px 15px;">=</h2>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<script src="scripts.js"></script>
+</body>
+</html>
